@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Service
 public class CoffeeService {
 
     private List<Coffee> coffees = new ArrayList<>();
@@ -25,7 +25,7 @@ public class CoffeeService {
     //GET By ID
     public Coffee getCoffee(Long id){
         for (Coffee coffee : coffees){
-            if(coffee.getId() == id){
+            if(coffee.getId().equals(id)){
                 return coffee;
             }
         }

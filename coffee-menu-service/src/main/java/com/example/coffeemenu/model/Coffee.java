@@ -6,6 +6,7 @@ public class Coffee {
     private double price;
 
 
+    
     public Coffee() {
     }
 
